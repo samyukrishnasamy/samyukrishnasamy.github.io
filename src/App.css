@@ -25,6 +25,12 @@ html.light {
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* Hide default scrollbar on body */
+}
+
 body {
   font-family: 'Circular Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.6;
@@ -35,6 +41,10 @@ body {
 
 .App {
   min-height: 100vh;
+  height: 100vh; /* Ensure App takes full viewport height */
+  overflow-y: scroll; /* Enable scrolling for the snapped sections */
+  scroll-snap-type: y mandatory; /* Enable mandatory scroll snapping on y-axis */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 section {
@@ -45,6 +55,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  scroll-snap-align: start; /* Snap each section to the start of the scroll container */
 }
 
 section h1 {
@@ -87,7 +98,7 @@ nav {
 
 nav.sticky {
   background-color: var(--secondary-bg);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adjusted for light mode */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
@@ -140,7 +151,7 @@ nav.sticky {
 }
 
 #home {
-  background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--card-bg) 100%); /* Use variables for gradient */
+  background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--card-bg) 100%); 
   color: var(--text-color);
 }
 
@@ -216,7 +227,7 @@ nav.sticky {
   background: var(--card-bg);
   border-radius: 8px;
   padding: 2.5rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Adjusted for light mode */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
   display: flex;
@@ -226,7 +237,7 @@ nav.sticky {
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4); /* Adjusted for light mode */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4); 
 }
 
 .project-card h3 {
@@ -251,7 +262,7 @@ nav.sticky {
 
 .tech-tag {
   background: var(--accent-color);
-  color: var(--primary-bg); /* Changed to use primary-bg for text color */
+  color: var(--primary-bg); 
   padding: 0.4rem 0.9rem;
   border-radius: 3px;
   font-size: 0.85rem;
@@ -261,7 +272,7 @@ nav.sticky {
 .project-link {
   display: inline-block;
   background: var(--accent-color);
-  color: var(--primary-bg); /* Changed to use primary-bg for text color */
+  color: var(--primary-bg); 
   padding: 0.8rem 1.8rem;
   text-decoration: none;
   border-radius: 50px;
