@@ -25,8 +25,10 @@ const Home = () => {
 
   return (
     <section id="home">
-      <h1>{text}<span className="cursor">|</span></h1>
-      <p>welcome to my website :)</p>
+      <div className="section-content">
+        <h1>{text}<span className="cursor">|</span></h1>
+        <p>welcome to my website :)</p>
+      </div>
     </section>
   );
 };
