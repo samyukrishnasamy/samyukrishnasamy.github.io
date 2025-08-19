@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Home = () => {
   const [text, setText] = useState('');
-  const fullText = "Hello! I am Samyu";
+  const fullText = "Hello!";
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <section id="home">
       <h1>{text}<span className="cursor">|</span></h1>
-      <p>Building impactful web experiences.</p>
+      <p>Welcome to my Portfolio!</p>
     </section>
   );
 };
