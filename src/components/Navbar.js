@@ -14,6 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className={sticky ? 'sticky' : ''}>
+      <div className="nav-name">Samyu Krishnasamy</div>
       <div className="nav-container">
         <a href="#about" className="nav-button">About</a>
         <a href="#projects" className="nav-button">Projects</a>

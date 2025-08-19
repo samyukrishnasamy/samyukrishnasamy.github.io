@@ -10,15 +10,14 @@ const Home = () => {
       const typingTimeout = setTimeout(() => {
         setText(fullText.slice(0, currentIndex + 1));
         setCurrentIndex(currentIndex + 1);
-      }, 150); // Speed of typing (150ms per character)
+      }, 150);
 
       return () => clearTimeout(typingTimeout);
     } else {
-      // Once typing is complete, wait 10 seconds and restart
       const restartTimeout = setTimeout(() => {
-        setText(''); // Clear text
-        setCurrentIndex(0); // Reset index to start typing again
-      }, 1000); // 2 seconds delay
+        setText('');
+        setCurrentIndex(0);
+      }, 1000);
 
       return () => clearTimeout(restartTimeout);
     }

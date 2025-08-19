@@ -7,21 +7,13 @@ const About = () => {
       <div className="about-content-wrapper">
         <div className="about-main-text">
           <p>
-            I am a rising senior in college passionate about technology and innovation. 
-            I love learning new skills and working on challenging projects.
+            I am a rising senior at the University of Virginia studying Computer Science and Data Science.
+            I love being adventures, whether it is exploring new places, trying new foods, or learning new skills.
           </p>
         </div>
 
-        <div className="skills-card">
-          <h3>Skills</h3>
-          <ul className="skills-list">
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Python</li>
-            <li>HTML/CSS</li>
-            <li>Git</li>
-          </ul>
-        </div>
+        <img src="assets/headshot.jpeg" alt="Samyu Krishnasamy" className="about-profile-pic" />
+
       </div>
     </section>
   );
