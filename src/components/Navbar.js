@@ -16,11 +16,11 @@ const Navbar = () => {
 
   return (
     <nav className={sticky ? 'sticky' : ''}>
-      <div className="nav-name">Samyu Krishnasamy</div>
+      <div className="nav-name">samyu krishnasamy</div>
       <div className="nav-container">
-        <a href="#about" className="nav-button">About</a>
-        <a href="#projects" className="nav-button">Projects</a>
-        <a href="#contact" className="nav-button">Contact</a>
+        <a href="#about" className="nav-button">about</a>
+        <a href="#projects" className="nav-button">projects</a>
+        <a href="#contact" className="nav-button">contact</a>
         <button onClick={toggleTheme} className="nav-button theme-toggle">
           <img src={theme === 'dark' ? '/assets/lightmode.png' : '/assets/darkmode.png'} alt="Toggle Theme" />
         </button>
