@@ -27,7 +27,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.DEPLOY_TOKEN }}
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
           publish_dir: ./build
           publish_branch: main
-          cname: samyukrishnasamy.github.io
+          external_repository: samyukrishnasamy/samyukrishnasamy.github.io
