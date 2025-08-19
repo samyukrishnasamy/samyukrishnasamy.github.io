@@ -1,3 +1,3 @@
 # My Portfolio
 
-Hi! Welcome to my personal portfolio!
+Hi, my name is Samyu! Welcome to my personal portfolio!
