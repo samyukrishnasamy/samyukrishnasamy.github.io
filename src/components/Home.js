@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <section id="home">
       <h1>{text}<span className="cursor">|</span></h1>
-      <p>Welcome to my Portfolio!</p>
+      <p>Welcome to my Website :)</p>
     </section>
   );
 };

@@ -258,57 +258,35 @@ nav.sticky {
 
 .social-links {
   display: flex;
-  gap: 30px; /* Space between icons */
+  flex-direction: row; /* Ensure items are in a row */
+  gap: 30px;
   margin-top: 2rem;
-  justify-content: center; /* Center the icons horizontally */
+  justify-content: center;
 }
 
-.social-links img {
-  width: 60px; /* Reasonable size */
-  height: 60px; /* Reasonable size */
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px; /* Space between image and text */
+}
+
+.contact-item img {
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
-.social-links img:hover {
+.contact-item img:hover {
   transform: scale(1.1);
 }
 
-/* Clean up old .contact-item styles */
-.contact-info {
-  display: flex; /* Changed to flex for centering the new social links */
-  justify-content: center;
-  align-items: center; /* Ensure vertical centering */
-  margin-top: 3rem;
-  width: 100%;
-}
-
-.contact-item {
-  background: var(--card-bg);
-  padding: 2.5rem;
-  border-radius: 8px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  text-align: center;
-}
-
-.contact-item h3 {
-  color: var(--text-color);
-  margin-bottom: 1rem;
-}
-
-.contact-item p, .contact-item a {
+.contact-item p {
   color: var(--light-text);
   font-size: 1.1rem;
-}
-
-.contact-item a {
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.contact-item a:hover {
-  color: var(--accent-color);
+  margin-top: 5px; /* Adjust spacing if needed */
 }
 
 @media (max-width: 768px) {
@@ -341,7 +319,8 @@ nav.sticky {
     grid-template-columns: 1fr;
   }
 
-  .contact-info {
-    grid-template-columns: 1fr;
+  .social-links {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 20px; /* Adjust gap for stacked items */
   }
 }

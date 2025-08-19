@@ -9,12 +9,11 @@ const About = () => {
         <div className="about-main-text">
           <p>
             I am a rising senior at the University of Virginia studying Computer Science and Data Science.
-            I love being adventures, whether it is exploring new places, trying new foods, or learning new skills.
           </p>
         </div>
         <div className="about-buttons">
-          <a href="samyukrishnasamy.github.io/assets/resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-button">View Resume</a>
-          <a href="samyukrishnasamy.github.io/assets/transcript.pdf" target="_blank" rel="noopener noreferrer" className="nav-button">View Transcript</a>
+          <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-button">Resume</a>
+          <a href="/assets/transcript.pdf" target="_blank" rel="noopener noreferrer" className="nav-button">Transcript</a>
         </div>
       </div>
     </section>
