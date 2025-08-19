@@ -4,15 +4,15 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "project",
-      description: "coming soon!",
-      link: "#"
+      title: "stopbullying.ai",
+      description: "cyberbullying detection model using fine tuned google bert",
+      link: "https://github.com/samyukrishnasamy/StopBullying.AI"
     },
     {
       id: 2,
-      title: "project", 
-      description: "coming soon!",
-      link: "#"
+      title: "project management application",
+      description: "assists collaboration across teams ",
+      link: "https://github.com/samyukrishnasamy/samyukrishnasamy.github.io"
     },
     {
       id: 3,
