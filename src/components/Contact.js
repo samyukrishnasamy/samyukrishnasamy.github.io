@@ -5,20 +5,15 @@ const Contact = () => {
     <section id="contact">
       <h2>Contact Me</h2>
       <div className="contact-info">
-        <div className="contact-item">
-          <h3>Email</h3>
-          <p>samyukrishnasamy@gmail.com</p>
-        </div>
-        <div className="contact-item">
-          <h3>LinkedIn</h3>
-          <a href="https://linkedin.com/in/samyu-krishnasamy/" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/samyu-krishnasamy/
+        <div className="social-links">
+          <a href="mailto:samyukrishnasamy@gmail.com">
+            <img src="/assets/email.png" alt="Email" />
           </a>
-        </div>
-        <div className="contact-item">
-          <h3>GitHub</h3>
+          <a href="https://linkedin.com/in/samyu-krishnasamy/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/linkedin.png" alt="LinkedIn" />
+          </a>
           <a href="https://github.com/samyukrishnasamy" target="_blank" rel="noopener noreferrer">
-            github.com/samyukrishnasamy
+            <img src="/assets/github.png" alt="GitHub" />
           </a>
         </div>
       </div>
