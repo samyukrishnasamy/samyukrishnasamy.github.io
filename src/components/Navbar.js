@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useTheme } from '../ThemeContext';
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +21,9 @@ const Navbar = () => {
         <a href="#about" className="nav-button">About</a>
         <a href="#projects" className="nav-button">Projects</a>
         <a href="#contact" className="nav-button">Contact</a>
+        <button onClick={toggleTheme} className="nav-button theme-toggle">
+          <img src={theme === 'dark' ? '/assets/lightmode.png' : '/assets/darkmode.png'} alt="Toggle Theme" />
+        </button>
       </div>
     </nav>
   );
