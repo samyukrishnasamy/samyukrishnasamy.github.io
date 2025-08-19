@@ -4,19 +4,24 @@ const About = () => {
   return (
     <section id="about">
       <h2>About Me</h2>
-      <p>
-        I am a rising senior in college passionate about technology and innovation. 
-        I love learning new skills and working on challenging projects.
-      </p>
-      <div className="skills">
-        <h3>Skills</h3>
-        <ul>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Python</li>
-          <li>HTML/CSS</li>
-          <li>Git</li>
-        </ul>
+      <div className="about-content-wrapper">
+        <div className="about-main-text">
+          <p>
+            I am a rising senior in college passionate about technology and innovation. 
+            I love learning new skills and working on challenging projects.
+          </p>
+        </div>
+
+        <div className="skills-card">
+          <h3>Skills</h3>
+          <ul className="skills-list">
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Python</li>
+            <li>HTML/CSS</li>
+            <li>Git</li>
+          </ul>
+        </div>
       </div>
     </section>
   );
